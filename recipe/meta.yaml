@@ -30,7 +30,7 @@ test:
     - PyMieScatt
 
 about:
-  home: http://air.eece.wustl.edu/people/ben-sumlin/
+  home: https://github.com/bsumlin/PyMieScatt
   license: MIT
   license_file: LICENSE.md
   summary: "A collection of forward and inverse Mie solving routines based on Bohren and Huffman's Mie Theory derivations."
