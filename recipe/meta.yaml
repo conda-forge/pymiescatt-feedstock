@@ -1,5 +1,5 @@
 {% set pypiname = "PyMieScatt" %}
-{% set version = "1.7.4" %}
+{% set version = "1.7.5.2" %}
 
 package:
   name: {{ pypiname|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
-  sha256: 9e2b9134d9b496d66a99ecc2e7b0c82c66ac5038b9990cf133929d983ee16283
-  
+  sha256: 82e13495748d4285ab5b6506ecf484a848140e496f0f9c828bf8279ea6cba0b6
+
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   home: https://github.com/bsumlin/PyMieScatt
   license: MIT
   license_file: LICENSE.md
-  summary: "A collection of forward and inverse Mie solving routines based on Bohren and Huffman's Mie Theory derivations."
+  summary: A collection of forward and inverse Mie solving routines based on Bohren and Huffman's Mie Theory derivations.
 
 extra:
   recipe-maintainers:
