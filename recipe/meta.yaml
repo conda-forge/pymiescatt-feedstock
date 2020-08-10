@@ -10,7 +10,7 @@ source:
   sha256: 07a301f1138f5e68164fcf00349bda78be99b8a3211a149b1762f2721b4b6b14
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -22,7 +22,7 @@ requirements:
     - python >=3.5
     - numpy
     - scipy
-    - matplotlib
+    - matplotlib-base
     - shapely
 
 test:
