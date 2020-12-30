@@ -5,11 +5,9 @@ Home: https://github.com/bsumlin/PyMieScatt
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymiescatt-feedstock/blob/master/LICENSE.txt)
 
 Summary: A collection of forward and inverse Mie solving routines based on Bohren and Huffman's Mie Theory derivations.
-
-
 
 Current build status
 ====================
