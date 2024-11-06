@@ -1,5 +1,5 @@
 {% set pypiname = "PyMieScatt" %}
-{% set version = "1.7.5.4" %}
+{% set version = "1.8.1.1" %}
 
 package:
   name: {{ pypiname|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
-  sha256: 07a301f1138f5e68164fcf00349bda78be99b8a3211a149b1762f2721b4b6b14
+  sha256: e628096cc0f3560f8170e0280df1d3196731e12bb55be214defc763c46666568
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
